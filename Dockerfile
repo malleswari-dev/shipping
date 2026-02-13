@@ -3,7 +3,7 @@ WORKDIR /opt/server
 COPY pom.xml .
 COPY src ./src
 RUN mvn clean package && \
-    mv target/shipping-*.jar shipping.jar
+    mv target/shipping-*.jar shipping.jar1
 
 
 FROM eclipse-temurin:17-jre-alpine
